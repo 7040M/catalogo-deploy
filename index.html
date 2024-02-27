@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Expo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <main>      
+        <div class="title">
+            <p>Anime Expo</p>
+        </div>
+        <div class="ABA">
+            <input type="radio" name="aba" id="0-opcao" onclick="trocarDisplay()" checked>
+            <label for="0-opcao">Clássicos</label>
+            <input type="radio" name="aba" id="1-opcao" onclick="trocarDisplay()">
+            <label for="1-opcao">Modernos</label>
+        </div>
+        <div id="container-classicos" onclick="navegacao()"></div>
+        <div id="container-modernos" onclick="navegacao()"></div>
+    </main>
+    <script src="./Expo.js"></script>
+</body>
+</html>
